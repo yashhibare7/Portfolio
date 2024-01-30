@@ -18,6 +18,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="Pool Karo"
+              description="PoolKaro, my brainchild as a Full Stack Developer, revolutionizes commuting with its dynamic ride-sharing platform. Focused on creating seamless experiences, I crafted an intuitive interface using React.js, Node.js, Express.js, and MongoDB. The platform not only facilitates effortless ride discovery but also prioritizes scalability and responsiveness. CarPoolKaro reflects my commitment to leveraging technology for positive societal impact, exemplifying proficiency in full-stack development and innovative connectivity solutions."
+              ghLink="https://github.com/yashhibare7/Pool-Karo"
+              demoLink=""
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
