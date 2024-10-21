@@ -22,6 +22,16 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
+              title="E-Ticket Connect"
+              description="Developed an online ticketing platform with three distinct login roles: Admin, User, and Conductor, each with tailored functionalities. The platform integrates secure and efficient payment processing along with e-tickets, revolutionizing traditional ticketing systems. I implemented a comprehensive dashboard using ChartJS and React-Dashboard for real-time data visualization, improving reporting efficiency by 50%. The platform's front-end is built with React, while the back-end uses Node.js and Express, with MongoDB Atlas ensuring secure data management across 20+ bus routes. It is deployed using reliable cloud services to maintain high availability and performance."
+              ghLink="https://github.com/yashhibare7/eTicketConnect-Backend"
+              demoLink="https://eticket-connect.web.app/"
+            />
+          </Col>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
               title="Pool Karo"
               description="PoolKaro, my brainchild as a Full Stack Developer, revolutionizes commuting with its dynamic ride-sharing platform. Focused on creating seamless experiences, I crafted an intuitive interface using React.js, Node.js, Express.js, and MongoDB. The platform not only facilitates effortless ride discovery but also prioritizes scalability and responsiveness. CarPoolKaro reflects my commitment to leveraging technology for positive societal impact, exemplifying proficiency in full-stack development and innovative connectivity solutions."
               ghLink="https://github.com/yashhibare7/Pool-Karo"

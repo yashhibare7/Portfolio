@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Yash Hibare </span>
             from <span className="purple"> Pune , India.</span>
             <br />
-            I'm pursuing my B.E. Degree from PES Modern College.
+            I'm currently a Software Engineer Intern at miniOrange. I hold an undergraduate degree in Information Technology from P.E.S. Modern College of Engineering and have gained experience in various technical domains.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
