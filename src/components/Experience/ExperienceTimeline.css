@@ -1,0 +1,202 @@
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #a855f7;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: left;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #a855f7;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -8px;
+}
+
+.timeline-item.right::before {
+  left: -8px;
+}
+
+.timeline-year {
+  position: absolute;
+  top: -25px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  background: #a855f7;
+  padding: 5px 15px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.timeline-item.left .timeline-year {
+  right: 30px;
+}
+
+.timeline-item.right .timeline-year {
+  left: 30px;
+}
+
+/* 🟣 Timeline Card Styling */
+.timeline-card {
+  background: rgba(30, 30, 47, 0.95);
+  border-radius: 16px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  padding: 20px 25px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3);
+}
+
+.card-header {
+  margin-bottom: 15px;
+}
+
+.role-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.role-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.badge {
+  background: #a855f7;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.company-name {
+  font-size: 16px;
+  color: #d8b4fe;
+  margin: 5px 0;
+}
+
+.duration {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.location {
+  font-size: 14px;
+  color: #bbb;
+  font-style: italic;
+}
+
+.card-body ul {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.card-body li {
+  margin-bottom: 8px;
+  color: #e2e8f0;
+}
+
+.card-footer {
+  display: flex;
+  flex-wrap: wrap;   /* 🟣 badges will move to next line */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tech-icon {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 10px;
+  color: #d8b4fe;
+  text-transform: uppercase;
+}
+
+/* 📱 Mobile Responsive */
+@media screen and (max-width: 992px) {
+  .timeline-container::after {
+    left: 25px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    left: 18px;
+  }
+
+  .timeline-item .timeline-card {
+    max-width: 100%;
+  }
+
+  .timeline-year {
+    position: relative; 
+    left: 0;
+    margin: 0 auto 15px auto;  
+    display: block;
+    text-align: center;
+  }
+
+  .card-footer {
+    gap: 6px;               
+    justify-content: flex-start;  
+  }
+
+  .tech-icon {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}
