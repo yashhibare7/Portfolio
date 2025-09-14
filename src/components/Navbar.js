@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineRise,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -88,7 +89,7 @@ function NavBar() {
                 to="/experience"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiOutlineRise
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Experience
